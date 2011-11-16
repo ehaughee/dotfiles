@@ -1,6 +1,6 @@
 #!/bin/bash
 ################################################################################
-# Genearl structure and foundation from:
+# General structure and foundation from:
 # tmuxgo - Dale Bewley <dale @ guifreelife org>
 #-------------------------------------------------------------------------------
 # Bugs & Todos:
