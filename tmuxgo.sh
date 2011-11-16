@@ -52,7 +52,7 @@ tmux send-keys   -t "$SESSION":0 'tail -f /home/juice/.log.error' C-m
 tmux select-pane -t 0
 
 # 1 - MySQL
-tmux new-window -t "$SESSION":1 -k -n MySQL 'mysql -u root -p juice38'
+tmux new-window -t "$SESSION":1 -k -n MySQL 'mysql -u root -p'
 
 # 2 - Shell
 tmux new-window -t "$SESSION":2 -k -n Shell 'sudo -s'
