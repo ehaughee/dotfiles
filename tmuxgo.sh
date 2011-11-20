@@ -48,6 +48,9 @@ tmux new-window -t "$SESSION":1 -k -n MySQL 'mysql -u root -p'
 # 2 - Root Shell
 tmux new-window -t "$SESSION":2 -k -n Shell 'sudo -s'
 
+# 3 - ncmpcpp - COMING SOON, have to figure out how to attach to an mpd server over the web...and how to run mpd on a windows box...
+# tmux new-window -t "$SESSION":2 -k -n Music 'ncmpcpp commands here'
+
 # Select the starting window, and attach to the session
 tmux select-window -t "$SESSION":0
 tmux -2 attach -t "$SESSION"
