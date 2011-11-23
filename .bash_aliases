@@ -1,3 +1,3 @@
 alias gpom="git push origin master"
-alias mysqlc="mysql -u root -p juice38"
+alias mysqlc="mysql -u root -p"
 alias tmuxgo="/home/eric/tmuxgo.sh"

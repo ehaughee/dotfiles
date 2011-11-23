@@ -19,6 +19,9 @@ syntax on
 " Pick color scheme
 colorscheme molokai
 
+" Highlight conflict markers
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
+
 " Highlight alt syntax in strings
 let php_htmlInStrings=1
 let php_sql_query=1
