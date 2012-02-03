@@ -1,5 +1,11 @@
+" Pathogen
+call pathogen#infect()
+
 " Turn on line numbering
 set nu
+
+" Turn off vi-compatibility
+set nocompatible
 
 " Turn on mouse support
 set mouse=a
@@ -7,7 +13,7 @@ set ttymouse=xterm " Supposedly helps tmux in some way...
 
 " Permanent status bar with different format
 set laststatus=2
-set statusline=\(%F%m%r%h%w\)\ %{&ff}\ %Y\ ASCII=\%03.3b\ HEX=\%02.2B\ POS=%04l,%04v\ %p%%\ LINES=%L 
+"set statusline=\(%F%m%r%h%w\)\-%{fugitive#statusline()}\ %{&ff}\ %Y\ ASCII=\%03.3b\ POS=%04l,%04v\ %p%%\ LINES=%L 
 
 " Allow Ctrl+PgUp/PgDn in tmux
 set t_kN=[6;*~
@@ -61,3 +67,6 @@ set sidescrolloff=3
 
 " Show all changes
 set report=0
+
+" Powerline settings
+let g:Powerline_symbols = 'unicode'
