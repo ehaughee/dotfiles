@@ -22,7 +22,7 @@ SESSION=$USER
 if tmux has-session -t "$SESSION" 2>/dev/null; then
     echo "Session $SESSION already exists. Attaching..."
     sleep 1
-    tmux -2 attach -t "$SESSION"
+    tmux attach -t "$SESSION"
     exit 0;
 fi
                  

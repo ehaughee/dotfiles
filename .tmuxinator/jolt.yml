@@ -10,8 +10,9 @@ tabs:
   - BASH: git pull
   - MySQL: mysql -u root -p juice38
   - LOGS:
-      layout: horizontal
+      layout: tiled
       panes:
+        - cd /home/juice/.log.error
         - cd /home/juice/juice38/unicomplex/application/logs/
         - cd /home/portal/application/logs/
 
