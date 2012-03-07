@@ -1,3 +1,5 @@
+.tmuxinator/*.yml
+
 .ICEauthority
 .Skype/
 .Sublime Text 2/
