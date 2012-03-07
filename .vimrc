@@ -69,4 +69,4 @@ set sidescrolloff=3
 set report=0
 
 " Powerline settings
-let g:Powerline_symbols = 'unicode'
+let g:Powerline_symbols = 'fancy'

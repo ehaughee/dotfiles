@@ -2,8 +2,14 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-#Set VIM as default editor
+# Set VIM as default editor
 export EDITOR=vim
+
+# Set to vi command mode
+set -o vi
+
+# Use tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
