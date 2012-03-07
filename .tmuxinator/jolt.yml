@@ -1,0 +1,17 @@
+# ~/.tmuxinator/jolt.yml
+# you can make as many tabs as you wish...
+
+project_name: Portal
+project_root: /home/portal
+socket_name: 
+pre: source ~/.bashrc
+tabs:
+  - VIM: vim .
+  - BASH: git pull
+  - MySQL: mysql -u root -p juice38
+  - LOGS:
+      layout: horizontal
+      panes:
+        - cd /home/juice/juice38/unicomplex/application/logs/
+        - cd /home/portal/application/logs/
+

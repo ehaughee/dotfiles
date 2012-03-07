@@ -11,6 +11,9 @@ set -o vi
 # Use tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
+# Use autocd
+shopt -s autocd
+
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 

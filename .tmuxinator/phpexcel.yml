@@ -1,0 +1,16 @@
+# ~/.tmuxinator/phpexcel.yml
+# you can make as many tabs as you wish...
+
+project_name: phpexcel
+project_root: /home/juice/juice38/
+socket_name: 
+pre: 
+tabs:
+  - VIM: vim phpexcel.php
+  - SHELL: git pull
+  - MySQL: mysql -u root juice38 -p
+  - LOGS: 
+      layout: horizontal
+      panes: 
+        - tail -f /home/juice/.log.error
+        - tail -f /var/log/apache2/error.log 
