@@ -1,5 +1,7 @@
 .tmuxinator/*.yml
 
+*.tmp
+.pdfedit
 .ICEauthority
 .Skype/
 .Sublime Text 2/
