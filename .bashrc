@@ -5,8 +5,8 @@
 # Set VIM as default editor
 export EDITOR=vim
 
-# Set to vi command mode
-set -o vi
+# Enable 256 color term
+export TERM=xterm-256color
 
 # Use tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
